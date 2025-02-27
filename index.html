@@ -1,1 +1,52 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highest-Grossing Films</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Add the #page-header element -->
+    <div id="page-header">
+        <h1>Highest-Grossing Films</h1>
+    </div>
+
+    <!-- Controls for sorting and filtering -->
+    <div id="controls">
+        <!-- Sorting -->
+        <label for="sort-select">Sort by:</label>
+        <select id="sort-select">
+            <option value="none">None</option>
+            <option value="title">Title</option>
+            <option value="year">Release Year</option>
+            <option value="box_office">Box Office</option>
+        </select>
+
+        <!-- Sorting Direction -->
+        <label for="sort-direction">Order:</label>
+        <select id="sort-direction">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select>
+
+        <!-- Filtering -->
+        <label for="filter-criteria">Filter by:</label>
+        <select id="filter-criteria">
+            <option value="none">None</option>
+            <option value="country">Country</option>
+            <option value="director">Director</option>
+            <option value="year">Release Year</option>
+        </select>
+
+        <input type="text" id="filter-input" placeholder="Enter filter value">
+    </div>
+
+    <!-- Container for films -->
+    <div id="films-container"></div>
+
+    <!-- Include the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
