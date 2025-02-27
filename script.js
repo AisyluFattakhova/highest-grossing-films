@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let data = []; // Initialize an empty array to store the film data
 
     // Fetch the JSON file
-    fetch('highest-grossing-films.json')
+    fetch('highest_grossing_films.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
