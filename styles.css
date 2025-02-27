@@ -1,1 +1,81 @@
+body {
+    font-family: Andale Mono, monospace;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
 
+h1 {
+    font-size: 1.2rem; /* Larger font size */
+    font-family: 'Arial', sans-serif; /* Font family */
+    color: #000000; /* White text color */
+    background-color: #8cc5ee;
+    padding: 18px  ; /* Space inside the box */
+    margin: 40px 40px; /* Space outside the box */
+    text-align: center; /* Center the text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+    text-transform: uppercase; /* Uppercase text */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+h1:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: white
+}
+#films-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.film-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: radial-gradient( #ffffff, #d9efff);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.film-card.visible {
+    opacity: 1; /* Make cards visible */
+    transform: translateY(0); /* Move cards to their original position */
+}
+
+.film-title {
+    background-color: #8cc5ee;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+    border: 2px solid #e0f0fa; /* Border */
+    transition: background-color 0.2s ease; /* Smooth transition */
+}
+
+.film-title:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: white
+}
+#controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#controls label {
+    margin-right: 0px;
+    
+}
+
+#controls select, #controls input {
+    padding: 5px;
+    margin-right: 10px;
+    background-color:#d9efff;
+    border-radius: 7px;
+}
